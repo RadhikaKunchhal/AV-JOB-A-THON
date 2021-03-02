@@ -1,7 +1,6 @@
 # AV-JOB-A-THON
 
-## Public rank: Top 3.5% scorer
-             76 out of 2363 participants.
+## Public rank: Top 3.5% scorer (76 out of 2363 participants)
 
 ### Problem Statement
 **Health Insurance Lead Prediction**
