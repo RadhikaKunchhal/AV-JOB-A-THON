@@ -1,0 +1,13 @@
+1. Concat the train and test data to understand data in a better way
+2. Before jumping onto uni/Bivariate, saw the oercentage of missing values along with datattypes of columns.
+3. After Analysis of columns, switvched to data pre rocessing followed by feature engineering
+4. In data preprocessing, sustituted the null values of holding_account_duration as 0, since we have some new customers too, so assuming the null info as 0(equivalent to new customer) helped in undersatnding the data better, and so was holding_account)type null type were replcaed by "no prior info" and lastly the "health indicator missing values were substitued as "Not Known" as there was some relation between all the missing values rows simountaneously, so in preprocessing kept it as "not known"
+5. converted the data types of columns according to the type of columns, for example holding accomodation type to be categorical
+6. A trend was seen that, which customer did not have duration info in account holding, the type wasnt even mentioned, and we substitued the duration as 0 assuming to be new customer, so made a NEW COLUMN name customer type with two values of old and new, new wherever duration and  type were 0
+7. Made another new column as Age-difference, subtraction of upper and lower age, and a column was further made on age-dofference column analysis, it was obsereved that, wgerever the age diff was 0, those people had no spouse and the reco_insurance_type was also indiviual, so a new column was made where marked 1 on that basis pecfocally.
+8. New column named city_Region_intraction was made concating both column values to uniquely idntify the areas of customer
+9. Four new columns were made using Accomodation type of owned and rented, reco_insurance_type of inddiviual and joint, and using is_spouse of no and yes columns
+10. 1 and 0 were allocated for above catefoires in respective columns and then new four columns were made,  on combining accomodation, reco_insurance by multiplying the values, to better undersatnd more customer data, which values give 1, and if either one of the mulplied value is 0, the value in new col becomes 0 and similarly three more using combo of acco-spouse , reco_insu-spouse, acc-insurance-spouse
+11. four further columns were made on adding the values of abpve columns
+12. Frequency encoding done for city, region and city_region_interaction columns
+\
